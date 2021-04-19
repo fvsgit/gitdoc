@@ -13,7 +13,7 @@
     "url": "https://github.com/lostintangent/gitdoc.git"
   },
   "engines": {
-    "vscode": "^1.44.0"
+    "vscode": "^1.55.0"
   },
   "categories": [
     "Other"

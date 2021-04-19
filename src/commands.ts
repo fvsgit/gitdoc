@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { EXTENSION_NAME } from "./constants";
+// import { EXTENSION_NAME } from "./constants";
 import { getGitApi } from "./git";
 import { updateContext } from "./utils";
 import { commit } from "./watcher";
@@ -13,7 +13,7 @@ interface GitTimelineItem {
 export function registerCommands(context: vscode.ExtensionContext) {
   function registerCommand(name: string, callback: (...args: any[]) => any) {
     context.subscriptions.push(
-      vscode.commands.registerCommand(`${EXTENSION_NAME}.${name}`, callback)
+      vscode.commands.registerCommand(`gitdoc.${name}`, callback)
     );
   }
 
